@@ -10,6 +10,17 @@ html{
 *:after{
     box-sizing: inherit;
 }
+/*----utility classes----*/
+.container{
+    width:70vw;
+    margin:40px auto;
+}
+
+img{
+    max-width:100%;
+}
+
+
 /*------------global styless--------*/
 
 /* color scheme 
@@ -82,6 +93,92 @@ header.primary nav a:hover{
     background-color:rgba(0,0,0,.6);
     transition:.3s;
 }
+
+section#intro{
+    border: 2px ridge purple;
+    padding-bottom:1.1rem;
+}
+
+#intro h2{
+    color:#8C362A;    
+}
+
+#content{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+#content article.post{
+    width:30%;
+    box-shadow: 5px 20px #000000;
+    padding:10px;
+    border-radius:5px;
+    font-size:.4rem;
+}
+
+#content article.post:hover{
+    box-shadow: 0 8px 15px rgba(0,0,0,.4);
+}
+
+
+time.post-date, figcaption, .post-meta{
+text-transform:uppercase;
+color:#ffffff;
+}
+
+.post figure{
+margin:0;
+}
+
+.post img{
+    border:1px solid #6CD9A4;
+    padding:2px;
+    margin: 5px 0;
+}
+
+.post a{
+    color:#6CD9A4;
+}
+
+.post a:hover{
+    text-decoration:none;
+}
+
+aside[role="complementary"]{
+background:pink;
+color:#000000;
+padding:1.3rem;
+}
+
+aside div.container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+aside article.widget{
+    width:42%;
+}
+
+
+article.widget a{
+    color:white;
+    display:block;
+    margin-top:.2rem;
+    text-align:center;
+}
+
+article.width footer{
+    display:none;
+}
+
+#colophon{
+    background-color:#8C362A;
+    
+}
+
+
 
 @media screen and (max-width:500px){
     header.primary nav ul{
