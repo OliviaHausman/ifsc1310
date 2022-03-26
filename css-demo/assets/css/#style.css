@@ -20,6 +20,13 @@ img{
     max-width:100%;
 }
 
+img-left{
+    float:left;
+    margin-left:20px;
+    border:1px solid chocolate;
+    padding:5px;
+}
+
 
 /*------------global styless--------*/
 
@@ -107,7 +114,8 @@ section#intro{
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
-
+    border-bottom:1px dotted pink;
+    padding-bottom:1rem;
 }
 
 #content article.post{
@@ -195,6 +203,82 @@ article.width footer{
 
 #addition-elements a:hover{
     text-decoration:none;
+}
+
+#additional-elements h2{
+    color:#8C362A;
+    border-bottom:20px dotted pink;
+}
+
+#additional-elements h3{
+    border-left:20px solid pink;
+    padding:5px 10px;
+}
+
+#additional-elements a{
+    color:#6CD9A4;
+
+}
+
+table{
+    width:100%;
+    border:1px solid #000000;
+
+}
+
+tr:nth-child(odd){
+    background-color:rgba(0, 0 ,0,.1);
+} 
+
+tr:hover{
+    background-color:#ffffff;
+}
+
+th{
+    background:#ffffff;
+    color:#6CD9A4;
+    padding:8px;
+}
+
+td{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+
+table caption{
+    color:pink;
+    padding:10px;
+    font-weight:lighter;
+    font-size:1.4rem;
+}
+
+#additional-elements ol{
+    list-style-type:upper-roman;
+    list-style-position:outside;
+}
+
+#aditional-elements ul{
+    list-style-type:square;
+}
+
+#aditional-elements ul ul{
+    list-style-type:disc;
+}
+
+dl{
+
+}
+
+dt{
+    font-weight:bold;
+}
+
+dd{
+    margin-left:0;
+}
+
+dd+dt{
+    margin-top:1rem;
 }
 
 
