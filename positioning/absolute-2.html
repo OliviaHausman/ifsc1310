@@ -16,7 +16,10 @@ body {
 	text-align: center;
 	line-height: 24px;
 }
+
 #wrapper {
+	position: relative;
+	height: 800px;
 	background-color: #FFF;
 	border-top-width: 1px;
 	border-right-width: 1px;
@@ -29,21 +32,39 @@ body {
 	width: 800px;
 	margin-right: auto;
 	margin-left: auto;
+	position:absolute;
 }
+
+#wrapper > div{
+	width: 120px;
+	height:120px;
+}
+
 #red {
 	background-color: #900;
+	top:0;
+	left:0;
+	
 }
 #green {
 	background-color: #090;
+	top:0;
+	right:0;
 }
 #blue {
 	background-color: #00F;
+	bottom:0;
+	left:0;
 }
 #purple {
 	background-color: #63C;
+	bottom:0;
+	right:0;
 }
 #footer {
 	background-color: #666;
+	
+	
 }
 h1 {
 	color: #000;
