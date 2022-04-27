@@ -1,0 +1,29 @@
+/*Color Theme 
+ #72AFED Base color 
+ #ffff white used for text of paragraphs?
+ #8CB3DB block color for back paragraphs
+ #A0BED9 border color
+ #CFE5FF header color
+*/
+
+/*----box sizing---*/
+
+html{
+    box-sizing: border-box;
+}
+    *,
+    *:before,
+    *:after {
+        box-sizing:inherit;
+}
+
+/*---utility styles--*/
+
+
+/*--responsive images--*/
+img{
+    max-width:100%;
+    height: auto;
+}
+
+/*---global styles--*/
