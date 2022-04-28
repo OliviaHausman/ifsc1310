@@ -27,3 +27,90 @@ img{
 }
 
 /*---global styles--*/
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;  
+}
+
+header.primary{
+    background-color:#8CB3DB;
+    text-align:center;
+    color:#CFE5FF;
+    text-shadow:1px 1px #ffffff;
+    padding: 5rem 1rem;
+    position:relative;
+    text-decoration-color: black;
+}
+
+header.primary::before{
+    content:"";
+    background-image:url(../img/background.jpg);
+    background-size:cover;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    opacity:0.5;
+}
+
+header.primary h1{
+    font-size:3.2 rem;
+    margin:20px 0;
+    position: relative;
+}
+
+header.primary h1 a{
+    color:#CFE5FF;
+    background-image:url(../img/logo-space-x-png-transparent.png) ;/*not working*/
+    display:block;
+    width: 800px;
+    height:70px;
+    margin:0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header.primary h2{
+    font-family: "Roboto Mono", monospace;
+    font-size: 2rem;
+    margin: 30px auto 60px;
+    position:relative;
+}
+
+
+header.primary nav ul{
+    position:relative;
+    padding:0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    max-width:800px;
+    margin: 20px auto;
+}
+
+header.primary nav li{
+    list-style-type:none;
+    background:transparent;
+    padding:30px;
+    width:20%;
+}
+
+header.primary nav ul li a{
+    color:#CFE5FF;
+    text-decoration:none;
+    background-color:#8CB3DB;
+    background-color:transparent(0,0,0,.4);
+    padding:6px 16px;
+    display:inline-block;
+    border-radius:20px;
+}
+
+header.primary nav a:hover{
+    background-color:rgba(0,0,0,.6);
+    transition:.3s;
+}
+
+
