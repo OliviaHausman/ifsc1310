@@ -29,7 +29,7 @@ img{
 /*---global styles--*/
 
 body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Oswald', sans-serif;
     margin:0;  
 }
 
@@ -74,7 +74,7 @@ header.primary h1 a{
 }
 
 header.primary h2{
-    font-family: "Roboto Mono", monospace;
+    font-family:'Oswald', sans-serif ;
     font-size: 2rem;
     margin: 30px auto 60px;
     position:relative;
@@ -113,4 +113,46 @@ header.primary nav a:hover{
     transition:.3s;
 }
 
+header.primary nav a:link,
+header.primary nav a:visited {
+  color: beige;
+  text-decoration: paleturquoise;
+  background-color: #000000;
+  background-color: rgba(142, 166, 184, 0.4);
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: block;
+}
 
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: rgba(51, 83, 107, 0.8);
+}
+#articles{
+    border: 15px ridge grey;
+    padding: 50px;
+    margin: 20px;
+}
+
+
+#slideshow {
+    border: 15px ridge grey;
+  padding: 50px;
+  margin: 20px;
+
+}
+
+img.container{
+    border-radius: 8px;
+}
+
+img.container:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);     
+}
+
+#content{
+border: 15px ridge grey;
+  padding: 50px;
+  margin: 20px;
+}
