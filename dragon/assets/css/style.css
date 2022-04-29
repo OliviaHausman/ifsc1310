@@ -161,16 +161,13 @@ p{
     text-decoration: white;
 }
 
-#slideshow {
+
+section#container img{
+    border-radius: 8px;
     border: 15px ridge grey;
   padding: 50px;
   margin: 20px;
   position:relative;
-
-}
-
-section#container img{
-    border-radius: 8px;
 }
 
 section#container img:hover{
@@ -192,4 +189,15 @@ aside.container{
 
 aside article.widget{
     width:40%;
+}
+
+footer{
+
+background-color: beige;
+}
+/*--history page--*/
+
+section#content p{
+text-align:center;
+background-color: #ffffff;
 }
