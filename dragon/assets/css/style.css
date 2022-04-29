@@ -37,7 +37,7 @@ body{
 /*--index.html--*/
 
 header.primary{
-    background-color:#8CB3DB;
+    background-image: url(../img/starsforslideshow.jpg);
     text-align:center;
     color:#CFE5FF;
     text-shadow:1px 1px #ffffff;
@@ -48,7 +48,6 @@ header.primary{
 
 header.primary::before{
     content:"";
-    background-image:url(../img/background.jpg);
     background-size:cover;
     position:absolute;
     top:0px;
@@ -117,6 +116,21 @@ header.primary nav a:hover{
 }
 /*----sections---*/
 
+section#content{
+    padding: 3rem 0;
+}
+
+section#content h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.2rem;
+    color:#ffffff;
+    text-align:center;
+}
+
+section#content p{
+    text-align:center;
+}
+
 #articles{
     border: 15px ridge grey;
     padding: 50px;
@@ -124,25 +138,27 @@ header.primary nav a:hover{
     position:relative;
 }
 
-header.post{
+section#articles h2{
     color:#CFE5FF;
     padding: 30px, 50px, 75px, 50px;
-    background-color: #8CB3DB;
-    text-decoration: #ffffff;
+    background-color: grey;
+    text-decoration: white;
     position:relative;
 }
 
-li.post{
+section#articles li{
     background-color: #ffffff;
-    margin: 30px, 50px, 75px, 50px;
+   
     padding: 30px, 50px, 75px, 50px;
-    height:30px;
+  
     width:fit-content;
     position:relative;
 }
 
 p{
     margin: 30px, 50px, 75px, 50px;
+    background-color: grey;
+    text-decoration: white;
 }
 
 #slideshow {
@@ -153,12 +169,27 @@ p{
 
 }
 
-img.container{
+section#container img{
     border-radius: 8px;
 }
 
-img.container:hover{
+section#container img:hover{
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);     
 }
 
 
+aside[role="complementary"]{
+    background-color: black;
+    color:#ffffff;
+    padding:2.5em;
+}
+
+aside.container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+aside article.widget{
+    width:40%;
+}
