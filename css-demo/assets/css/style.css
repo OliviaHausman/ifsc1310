@@ -85,7 +85,7 @@ header.primary nav ul{
 }
 
 header.primary nav ul li{
-    list-style-type:circle;
+    list-style-type:square;
     background:#8C362A;
 }
 
