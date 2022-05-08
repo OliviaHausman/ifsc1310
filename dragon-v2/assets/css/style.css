@@ -1,0 +1,226 @@
+/*Color Theme 
+ #72AFED Base color 
+ #ffff white used for text of paragraphs?
+ #8CB3DB block color for back paragraphs
+ #A0BED9 border color
+ #CFE5FF header color
+*/
+
+/*----box sizing---*/
+
+html{
+    box-sizing: border-box;
+}
+    *,
+    *:before,
+    *:after {
+        box-sizing:inherit;
+}
+
+/*---utility styles--*/
+
+
+/*--responsive images--*/
+img{
+    max-width:100%;
+    height: auto;
+}
+
+/*---global styles--*/
+
+body{
+    font-family:'Oswald', sans-serif;
+    margin:0;  
+    background-color:#72AFED ;
+}
+
+/*--index.html--*/
+
+header.primary{
+    background-image: url(../img/starsforslideshow.jpg);
+    text-align:center;
+    color:#CFE5FF;
+    text-shadow:1px 1px #ffffff;
+    padding: 5rem 1rem;
+    position:relative;
+    text-decoration-color: black;
+}
+
+header.primary::before{
+    content:"";
+    background-size:cover;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    opacity:0.5;
+}
+
+header.primary h1{
+    font-size:3.2 rem;
+    margin:20px 0;
+    position: relative;
+}
+
+header.primary h1 a{
+    color:#CFE5FF;
+    background-image:url(../img/spacerx-logo_0.png) ;/*not working*/
+    display:block;
+    width: 800px;
+    height:70px;
+    margin:0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header.primary h2{
+    font-family:'Oswald', sans-serif ;
+    font-size: 2rem;
+    margin: 30px auto 60px;
+    position:relative;
+}
+
+
+header.primary nav ul{
+    position:relative;
+    padding:0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    max-width:800px;
+    margin: 20px auto;
+}
+
+header.primary nav li{
+    list-style-type:none;
+    background:transparent;
+    padding:30px;
+    width:20%;
+}
+
+header.primary nav ul li a{
+    color:#CFE5FF;
+    text-decoration:none;
+    background-color:#8CB3DB;
+    background-color:transparent(0,0,0,.4);
+    padding:6px 16px;
+    display:inline-block;
+    border-radius:20px;
+}
+
+header.primary nav a:hover{
+    background-color:rgba(0,0,0,.6);
+    transition:.3s;
+}
+/*----sections---*/
+
+section#content{
+    padding: 3rem 0;
+}
+
+section#content h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:1.2rem;
+    color:#ffffff;
+    text-align:center;
+}
+
+section#content p{
+    text-align:center;
+}
+
+#articles{
+    border: 15px ridge grey;
+    padding: 50px;
+    margin: 20px;
+    position:relative;
+}
+
+section#articles h2{
+    color:#CFE5FF;
+    padding: 30px, 50px, 75px, 50px;
+    background-color: grey;
+    text-decoration: white;
+    position:relative;
+}
+
+section#articles li{
+    background-color: #ffffff;
+   
+    padding: 30px, 50px, 75px, 50px;
+  
+    width:fit-content;
+    position:relative;
+}
+
+p{
+    margin: 30px, 50px, 75px, 50px;
+    background-color: grey;
+    text-decoration: white;
+}
+
+
+section#container img{
+    border-radius: 8px;
+    border: 15px ridge grey;
+  padding: 50px;
+  margin: 20px;
+  position:relative;
+}
+
+section#container img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);     
+}
+
+
+aside[role="complementary"]{
+    background-color: black;
+    color:#ffffff;
+    padding:2.5em;
+}
+
+aside.container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+aside article.widget{
+    width:40%;
+}
+
+.widget.overview table {
+    font-size: 0.7em;
+    border-collapse: collapse;
+  }
+  
+  .widget.overview table td {
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+  }
+  
+  .widget.overview table td:nth-child(even) {
+    text-align: right;
+  }
+  aside article a:link,
+  aside article a:visited {
+    color: #ffffff;
+    display: block;
+    margin-top: 1.2em;
+    letter-spacing: 1.2px;
+  }
+
+
+
+footer{
+
+background-color: beige;
+}
+/*--history page--*/
+
+section#content p{
+text-align:center;
+background-color: #ffffff;
+}
