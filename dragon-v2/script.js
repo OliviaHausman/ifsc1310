@@ -1,11 +1,16 @@
-function createParagraph() {
-  const para = document.createElement('p');
-  para.textContent = 'You clicked the button!';
-  document.body.appendChild(para);
-}
 
-const buttons = document.querySelectorAll('button');
+$(document).ready(function() {
 
-for (const button of buttons) {
-  button.addEventListener('click', createParagraph);
-}
+  $('.fade').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    slide: 'div',
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 2000
+  });
+
+
+});
