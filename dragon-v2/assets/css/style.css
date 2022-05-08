@@ -30,20 +30,25 @@ img{
 
 body{
     font-family:'Oswald', sans-serif;
-    margin:0;  
-    background-color:#72AFED ;
+    margin:auto;
+    
+    background-color:#242963 ;
 }
 
 /*--index.html--*/
-
+.img{
+    max-width: 100%;
+    max-height: 100%;
+   }
 header.primary{
     background-image: url(../img/starsforslideshow.jpg);
     text-align:center;
-    color:#CFE5FF;
+    color:#242963;
     text-shadow:1px 1px #ffffff;
-    padding: 5rem 1rem;
+    padding: 20px;
     position:relative;
     text-decoration-color: black;
+
 }
 
 header.primary::before{
@@ -63,9 +68,10 @@ header.primary h1{
     position: relative;
 }
 
+
+
 header.primary h1 a{
     color:#CFE5FF;
-    background-image:url(../img/spacerx-logo_0.png) ;/*not working*/
     display:block;
     width: 800px;
     height:70px;
@@ -77,11 +83,14 @@ header.primary h1 a{
 
 header.primary h2{
     font-family:'Oswald', sans-serif ;
-    font-size: 2rem;
-    margin: 30px auto 60px;
-    position:relative;
+    font-size: 1.5rem;
+    margin: auto;
+    position:center;
 }
 
+header.primary nav{
+    max-width: 800px;
+}
 
 header.primary nav ul{
     position:relative;
@@ -101,7 +110,7 @@ header.primary nav li{
 }
 
 header.primary nav ul li a{
-    color:#CFE5FF;
+    color:#242963;
     text-decoration:none;
     background-color:#8CB3DB;
     background-color:transparent(0,0,0,.4);
@@ -118,17 +127,21 @@ header.primary nav a:hover{
 
 section#content{
     padding: 3rem 0;
+    margin: 20px 50px 25px;
 }
 
 section#content h2{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size:1.2rem;
-    color:#ffffff;
+    font-size:1.6rem;
+    color:#525EE3;
     text-align:center;
+    text-shadow: 1px 1px 1px #999FE8 ;
 }
 
 section#content p{
     text-align:center;
+    padding:20px 20px 20px 20px;
+    border-radius: 5px groove purple
 }
 
 #articles{
@@ -144,36 +157,47 @@ section#articles h2{
     background-color: grey;
     text-decoration: white;
     position:relative;
+    border: 3px groove white;
+    border-radius: 1px;
+    text-align: center;
 }
 
 section#articles li{
-    background-color: #ffffff;
-   
-    padding: 30px, 50px, 75px, 50px;
-  
+    padding: 30px, 50px, 75px, 50px;  
     width:fit-content;
     position:relative;
+    text-align: left;
 }
 
 p{
     margin: 30px, 50px, 75px, 50px;
-    background-color: grey;
+    background-color:#999FE8;
     text-decoration: white;
+    border: 2px groove white;
+    border-radius: 12px;
+    padding: 50px;
 }
 
 
-section#container img{
-    border-radius: 8px;
-    border: 15px ridge grey;
-  padding: 50px;
-  margin: 20px;
-  position:relative;
+section#slideshow1{
+    margin:0;
+    padding:15px;
+    float:left;
+    
+}
+section#slideshow2{
+    margin:0;
+    padding:15px;
+    float:left;
+    
 }
 
-section#container img:hover{
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);     
+section#slideshow3{
+    margin:0;
+    padding:15px;
+    float:left;
+    
 }
-
 
 aside[role="complementary"]{
     background-color: black;
@@ -223,4 +247,9 @@ background-color: beige;
 section#content p{
 text-align:center;
 background-color: #ffffff;
+}
+
+.img{
+ max-width: 100%;
+ max-height: 100%;
 }
